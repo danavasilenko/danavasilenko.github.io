@@ -1,38 +1,91 @@
-body {
-    background-image: url('background.jpg'); /* Path to your background image */
-    background-size: cover;
-    background-position: center;
-    font-family: Arial, sans-serif;
+  html, body {
+    height: 100%;
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.container {
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 100px;
-    border-radius: 30px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+  }
+  
+  .container {
+    width: 90%; 
+    max-width: 600px; 
     text-align: center;
-    font-size: 50px; 
+    padding: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
     color: #905D1A ;
-    margin-top: 0px;
-}
-
-form {
+  }
+  
+  .input-group input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3bcd6e ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .bmi-info-link {
+    display: block;
+    margin-top: 20px;
     text-align: center;
-}
+    color: #28a9c2;
+    text-decoration: none;
+  }
+  
+  .bmi-info-link:hover {
+    text-decoration: underline;
+  }
+  
+  #bmi-result {
+    margin-top: 15px;
+    color: #000000 ;
+  }
 
-input[type="number"],
-button {
-    font-size: 30px; 
-}
+  .back-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3bcd6e ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-#result {
-    text-align: center;
-}
+  .refresh-button {
+    padding: 0.8rem;
+    background-color: #d75d54; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: none;
+  }
+  
+  .advice-button {
+    background-color: #3bcd6e ;
+    padding: 0.8rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: none;
+  }
+  
