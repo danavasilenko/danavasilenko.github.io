@@ -1,0 +1,38 @@
+body {
+    background-image: url('background.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 100px;
+    border-radius: 30px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px; 
+    color: #905D1A ;
+    margin-top: 0px;
+}
+
+form {
+    text-align: center;
+}
+
+input[type="number"],
+button {
+    font-size: 30px; 
+}
+
+#result {
+    text-align: center;
+}
